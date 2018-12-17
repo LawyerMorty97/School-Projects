@@ -1,0 +1,6 @@
+D:\Repos\SoftwareDesign\SnakeMess\bin\Release\SnakeMess.exe
+D:\Repos\SoftwareDesign\SnakeMess\bin\Release\SnakeMess.pdb
+D:\Repos\SoftwareDesign\SnakeMess\obj\x86\Release\SnakeMess.csproj.CoreCompileInputs.cache
+D:\Repos\SoftwareDesign\SnakeMess\obj\x86\Release\SnakeMess.exe
+D:\Repos\SoftwareDesign\SnakeMess\obj\x86\Release\SnakeMess.pdb
+D:\Repos\SoftwareDesign\SnakeMess\bin\Release\SnakeMess.xml

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=ParseEngine
+comment0.text=\r\n\ Handles\ the\ reading\ of\ JSON\ streams\r\n\r\n\ @author\ Mathias\ Berntsen\r\n\ @version\ 1.0\r\n
+comment1.params=fileToLoad
+comment1.target=java.lang.String\ ParseFile(java.lang.String)
+numComments=2

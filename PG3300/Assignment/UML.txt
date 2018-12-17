@@ -1,0 +1,60 @@
+@startuml
+
+title Snake Game - Karsten, Mathias, Tharin 
+
+
+class Point {
+  +Int X
+  + int Y
+  +int MultipliedSum(result)
+}
+
+class GameField{
+  -Stopwatch _gameTime
+  -Random _randomGenerator
+  
+  +Point App
+  +Settings GameSettings
+  +Point Dimensions
+  +bool GameOver
+  +bool Pause
+  +Player Player
+  
+  +GameField(Settings settings)
+  -HandleInput() : void
+  +SpawnApple(bool firstSpawn) : void
+  +Update() : void
+}
+
+class Client{
+  {static} -GameField _board
+  {static} -Player _player
+
+  {static} Settings _gameSettings
+
+  {static} -Init() : void
+  {static} +Main(string[] arguments) : void
+}
+
+class Player{
+    -GameField _field
+    +bool ExtendSnake
+    +Direction CurrentDirection
+    +Direction LastDirection
+    +List<Point> Body
+    
+    +Player(GameField field)
+    -Logic_Death(Point playerHead) : void
+    +Update() : void
+}
+
+class Point
+class Player
+class GameField
+class Client
+
+ Client *-- Player
+ Client *-- GameField
+ Player o--Point
+ GameField o--Point
+@enduml

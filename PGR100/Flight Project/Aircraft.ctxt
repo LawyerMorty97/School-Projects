@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Aircraft
+comment1.params=
+comment1.target=Aircraft()
+comment2.params=manufacturer\ type\ capacity
+comment2.target=Aircraft(java.lang.String,\ java.lang.String,\ int)
+comment3.params=
+comment3.target=java.lang.String\ getManufacturer()
+comment4.params=
+comment4.target=java.lang.String\ getType()
+comment5.params=
+comment5.target=int\ getCapacity()
+numComments=6

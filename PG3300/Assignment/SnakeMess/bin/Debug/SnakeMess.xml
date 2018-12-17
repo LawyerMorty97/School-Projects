@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnakeMess</name>
+    </assembly>
+    <members>
+        <member name="T:SnakeMess.Direction">
+            <summary>
+            Enumerator used to control direction of an entity
+            </summary>
+        </member>
+        <member name="F:SnakeMess.Direction.Up">
+            <summary>
+            Facing Up
+            </summary>
+        </member>
+        <member name="F:SnakeMess.Direction.Down">
+            <summary>
+            Facing Down
+            </summary>
+        </member>
+        <member name="F:SnakeMess.Direction.Left">
+            <summary>
+            Facing Left
+            </summary>
+        </member>
+        <member name="F:SnakeMess.Direction.Right">
+            <summary>
+            Facing Right
+            </summary>
+        </member>
+        <member name="T:SnakeMess.Settings">
+            <summary>
+            A data structure holding the settings of the game.
+            </summary>
+        </member>
+        <member name="F:SnakeMess.Settings.Apple">
+            <summary>
+            The string for an apple
+            </summary>
+        </member>
+        <member name="F:SnakeMess.Settings.SnakeHead">
+            <summary>
+            The string for the head of the snake
+            </summary>
+        </member>
+        <member name="F:SnakeMess.Settings.SnakeBody">
+            <summary>
+            The string for the body of the snake
+            </summary>
+        </member>
+        <member name="M:SnakeMess.Client.Init">
+            <summary>
+            Create an instance of the whole game (GameField and a Player class).
+            </summary>
+        </member>
+        <member name="M:SnakeMess.GameField.#ctor(SnakeMess.Settings)">
+            <summary>
+            Create an instance of the GameField object
+            </summary>
+            <param name="settings">The settings that will be used in the instance of the game session.</param>
+        </member>
+        <member name="M:SnakeMess.GameField.SpawnApple(System.Boolean)">
+            <summary>
+            Handles the spawning of apples on the field.
+            </summary>
+            <param name="firstSpawn">Was the apple first spawned or not.</param>
+        </member>
+        <member name="M:SnakeMess.GameField.Update">
+            <summary>
+            Updates the game field with the player
+            </summary>
+        </member>
+        <member name="M:SnakeMess.GameField.HandleInput">
+            <summary>
+            Handles the input taken from the console.
+            </summary>
+        </member>
+        <member name="M:SnakeMess.Player.#ctor(SnakeMess.GameField)">
+            <summary>
+            Create an instance of the Player object
+            </summary>
+            <param name="field">The game field where the player will be placed</param>
+        </member>
+        <member name="M:SnakeMess.Player.Logic_Death(SnakeMess.Point)">
+            <summary>
+            Handles the logic related to when the player is killed by different actions
+            </summary>
+            <param name="playerHead">The point where the head of the snake is</param>
+        </member>
+        <member name="M:SnakeMess.Player.Update">
+            <summary>
+            Handles updating the body of the player and all related calls to player death.
+            </summary>
+        </member>
+        <member name="M:SnakeMess.Point.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Create a point by inputting two integers
+            </summary>
+        </member>
+        <member name="M:SnakeMess.Point.#ctor(SnakeMess.Point)">
+            <summary>
+            Create a point using another Point
+            </summary>
+        </member>
+        <member name="M:SnakeMess.Point.MultipliedSum">
+            <summary>
+            Get a sum of X multiplied by Y.
+            </summary>
+        </member>
+    </members>
+</doc>

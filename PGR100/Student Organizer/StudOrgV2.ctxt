@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=StudOrgV2
+comment0.text=\r\n\ List\ of\ students\r\n\ get\ (method,\ get\ student),\ add\ (method,\ add\ student),\ show\ (method,\ print\ list),\ getTotal\ (method,\ get\ total\ students)\r\n\ \r\n\ String[]\ <-\ ArrayList\ of\ Strings\r\n
+comment1.params=
+comment1.target=StudOrgV2()
+comment2.params=name
+comment2.target=void\ addStudent(java.lang.String)
+comment3.params=index
+comment3.target=java.lang.String\ getStudentName(int)
+comment4.params=index
+comment4.target=void\ removeStudent(int)
+comment5.params=
+comment5.target=int\ getNumberOfStudents()
+comment6.params=
+comment6.target=void\ printStudent()
+numComments=7

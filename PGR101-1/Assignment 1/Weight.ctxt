@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Weight
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Weight\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Weight()
+comment2.params=uid
+comment2.target=Weight(java.lang.String)
+comment3.params=uid\ locid
+comment3.target=Weight(java.lang.String,\ java.lang.String)
+comment4.params=objectToCompare
+comment4.target=boolean\ equals(Weight)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

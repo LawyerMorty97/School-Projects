@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ConsoleInput
+comment1.params=
+comment1.target=ConsoleInput()
+comment2.params=
+comment2.target=int\ readInt()
+numComments=3

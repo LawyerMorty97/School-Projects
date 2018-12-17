@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=State
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ State\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name\ path
+comment1.target=State(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=java.lang.String\ getImagePath()
+comment4.params=
+comment4.target=javafx.scene.image.Image\ getImage()
+comment5.params=
+comment5.target=javafx.scene.image.Image\ getHiddenImage()
+numComments=6

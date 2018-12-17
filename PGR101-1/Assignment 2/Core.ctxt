@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Core
+comment0.text=\r\n\ Handles\ game\ session\ creation\r\n\r\n\ @author\ Mathias\ Bertsen\r\n\ @version\ 1.0\r\n
+comment1.params=menuReturn
+comment1.target=void\ initGame(boolean)
+comment1.text=\r\n\ Uses\ the\ ParseEngine\ to\ parse\ and\ create\ all\ questions.\r\n\ Format\ of\ '.flag'\:\ flagName,Official\ Name\r\n\ A\ semi-colon\ is\ the\ splitter\ between\ a\ State\ object\r\n\ A\ comma\ is\ the\ splitter\ between\ the\ filename\ and\ official\ name\ of\ a\ state\r\n
+numComments=2

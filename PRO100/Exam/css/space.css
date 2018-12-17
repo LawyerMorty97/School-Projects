@@ -1,0 +1,214 @@
+/*---kodet av Emilie Mende Wilhelmsen---*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10,14,41);
+    background-image: url(../images/Space/Star-PNG-Pic.png);
+}
+
+#animation-container {
+    position: relative;
+    width: 100%;
+    height: 4000px;
+}
+
+#menu-btn{
+    position: absolute;
+    left: 5%;
+    color: rgb(36,148,162);
+    font-family: "bebas neue";
+    font-size: 4vw;
+}
+
+
+#main-page-header{
+    position: relative;
+    margin: auto;
+    width: 23%;
+    height: 100px;
+    
+}
+
+h1{
+    font-family: "bebas neue";
+    color: rgb(36,148,162); 
+    font-size: 14vw;
+    transition: font-size 2s;
+    
+}
+
+h1:hover{
+    font-size: 17vw;
+}
+
+@font-face {
+    font-family: 'bebas neue';
+    src: url(../fonts/BebasNeue.otf);
+}
+
+/*---sun---*/
+#sun-wrap {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 300px;
+}
+#sun{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    animation: sunSpins 15s linear infinite;
+}
+
+
+#sun-facts{
+    position: absolute;
+    font-family: "bebas neue";
+    font-size: 2.6vw;
+    color: rgb(219, 177, 59);
+    width: 20%;
+    right: 5%;
+    display: none;
+}
+    
+
+#sun:hover ~ #sun-facts{
+    display: block;
+    }
+
+@keyframes sunSpins{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(365deg);
+    }
+}
+    
+/*---sun end---*/
+
+
+/*---earth---*/
+#earth-wrap{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 1300px;
+}
+
+#earth{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    animation: earthSpins 15s linear infinite;
+}
+
+#earth-facts{
+    position: absolute;
+    color: rgb(219, 177, 59);
+    font-family: "bebas neue";
+    font-size: 2.6vw;
+    width: 20%;
+    display: none;
+    left: 5%;
+    
+}
+
+#earth:hover ~ #earth-facts{
+    display: block;
+}
+
+@keyframes earthSpins{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(365deg);
+    }
+}
+
+/*---earth ends---*/
+
+
+/*---homespace---*/
+#homespace-wrap{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 2300px;
+}
+
+#homespace{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    animation: homespaceSpins 15s linear infinite;
+}
+
+
+#homespace-facts{
+    position: absolute;
+    color: rgb(219, 177, 59);
+    font-family: "bebas neue";
+    font-size: 2.6vw;
+    width: 20%;
+    right: 5%;
+    display: none;
+}
+
+#homespace:hover ~ #homespace-facts{
+    display: block;
+}
+    
+    @keyframes homespaceSpins{
+        0%{
+           transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(365deg);
+        }
+    }
+}
+/*---homespace ends---*/
+
+/*---elyria---*/
+#elyria-wrap{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 3300px;
+}
+
+#elyria{
+    position: absolute;
+    width: 50%;
+    left: 30%;
+    top: 3300px;
+    animation: elyriaSpins 15s linear infinite;
+}
+
+#elyria-facts{
+    position: absolute;
+    color: rgb(219, 177, 59);
+    font-family: "bebas neue";
+    top: 3300px;
+    font-size: 2.6vw;
+    width: 20%;
+    left: 5%;
+    display: none;
+}
+
+#elyria:hover ~ #elyria-facts{
+    display: block;
+}
+
+@keyframes elyriaSpins{
+    0%{
+       transform: rotate(0deg); 
+    }
+    100%{
+       transform: rotate(365deg);
+    }
+}
+/*---elyria ends---*/

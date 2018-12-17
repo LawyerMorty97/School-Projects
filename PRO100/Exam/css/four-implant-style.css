@@ -1,0 +1,185 @@
+/* Kodet av Kjell-Olaf Slagnes */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10,14,41);
+    background-image: url(../images/implant/background.png);
+    background-size: cover;
+}
+
+/* Container */
+#animation-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+/* Logo image styling */
+#TMRW-logo {
+    position: absolute;
+    height: 60%;
+    top: 20%;
+    right: 43%;
+    animation: begin-logo 5s forwards, end-logo 5s 66s forwards;
+}
+
+/* Head image styling */
+#head-profile {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    height: 40%;
+    opacity: 0;
+    animation: head-profile 5s linear 37s forwards, head-profile2 2s 52s forwards;
+}
+
+/* Implant chip image styling */
+#implant-chip {
+    position: absolute;
+    bottom: 17%;
+    left: 10%;
+    height: 20%;
+    opacity: 0;
+    animation: implant-anim 7s linear 37s forwards;
+}
+
+/* Return to main page button styling */
+a {
+    position: absolute;
+    font-family: "Syncopate";
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: white;
+    top: 3%;
+    left: 3%;
+}
+
+/* Start paragraph styling */
+p {
+    position: absolute;
+    font-family: "Syncopate";
+    font-size: 3vh;
+    color: white;
+    width: 75%;
+    text-align: center;
+    top: 25%;
+    left: 12.5%;
+}
+
+#first-paragraph {
+    opacity: 0;
+    animation-name: p-fadein-out;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+#second-paragraph {
+    opacity: 0;
+    top: 40%;
+    animation-name: p-fadein-out;
+    animation-duration: 8s;
+    animation-delay: 7s;
+}
+
+#third-paragraph {
+    opacity: 0;
+    animation-name: p-fadein-out;
+    animation-duration: 20s;
+    animation-delay: 15s;
+}
+
+#forth-paragraph {
+    opacity: 0;
+    top: 40%;
+    animation: p-fadein-out;
+    animation-duration: 17s;
+    animation-delay: 18s;
+}
+
+#fifth-paragraph {
+    opacity: 0;
+    top: 50%;
+    animation: p-fadein-out;
+    animation-duration: 14s;
+    animation-delay: 21s;
+}
+
+#sixth-paragraph {
+    opacity: 0;
+    top: 65%;
+    animation: p-fadein-out;
+    animation-duration: 11s;
+    animation-delay: 24s;
+}
+#seventh-paragraph {
+    opacity: 0;
+    animation: p-fadein-out;
+    animation-duration: 18s;
+    animation-delay: 36s;
+}
+
+#eighth-paragraph {
+    opacity: 0;
+    top: 50%;
+    animation: p-fadein-out;
+    animation-duration: 10s;
+    animation-delay: 55s;
+}
+
+#nineth-paragraph {
+    top: 60%;
+    opacity: 0;
+    animation: p-fadein 5s 71s forwards;
+}
+/* End paragraph styling */
+
+/* Start logo animation */
+@keyframes begin-logo {
+    0% {opacity: 0;}
+    30% {top: 20%; right: 43%; height: 60%; opacity: 1; transform: rotate(0deg);}
+    100% {top: 5%; right: 5%; height: 15%; transform: rotate(360deg);}
+}
+
+@keyframes end-logo {
+    0% {top: 5%; right: 5%; height: 15%;}
+    100% {right: 43%; height: 50%; top: 10%;}
+}
+
+/* End logo animation */
+
+/* Paragraph fade animation */
+@keyframes p-fadein-out {
+    30% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes p-fadein {
+    30% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+/* Start implant animation */
+
+@keyframes implant-anim {
+    0% {opacity: 1; left: 10%;}
+    30% {opacity: 1; left: 10%; height: 13%; top: 63%;}
+    80% {opacity: 1; left: 45%; height: 13%; top: 63%;}
+    100% {opacity: 0; left: 45%; height: 13%; top: 63%;}
+}
+/* End implant animation */
+
+/* Start head animation */
+@keyframes head-profile {
+    30% {opacity: 1;}
+    100% {opacity: 1; left: 37%;}
+}
+
+@keyframes head-profile2 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+/* End head animation */

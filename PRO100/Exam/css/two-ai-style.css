@@ -1,0 +1,266 @@
+/* Kodet av Kim Thuong Mu */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+body {
+    background: #0A0E29;
+    animation: grad_bg 20s ease infinite;
+    background: linear-gradient(270deg, #DBB13B, #56BDA2, #2494A2, #304B78, #2D3258, #0A0E29);
+    background-size: 400% 400%;
+}
+
+@keyframes grad_bg { 
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.title {
+    color: white;
+    text-align: center;
+}
+
+.infobot-name {
+    color: white;
+    text-align: center;
+}
+
+.chatbox {
+    width: 450px;
+    min-width: 400px;
+    background: #2494a2;
+    padding-top: 0px;
+    margin: 20px auto;
+}
+
+.logs {
+    width: 100%;
+    height: 500px;
+    background: #2494A2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chat {
+    display: block;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.chat .user-photo {
+    width: 60px;
+    height: 60px;
+    background: #DBB13B;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.chat .user-photo img {
+    width: 100%;
+}
+
+.chat .chat-message {
+    width: 70%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    background: #56BDA2;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.human .chat-message {
+    background-color: 56BDA2;    
+} 
+
+.robot .chat-message {
+    background-color: 56BDA2;
+}
+
+.chat-formation {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5px;
+}
+
+.chat-formation .chat_box {
+    width: 180px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.send_btn_bg {
+    background-color: #DBB13B;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.chat-formation .send_btn {
+    background: url("../images/AI/send_btn.png") no-repeat center;
+    background-size: 20px;
+    height: 20px;
+    padding: 5px 15px;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+}
+
+/* Typing animation */
+.typing_anim {
+    background: rgba(255, 255, 255, 0.85);
+    width: 50px;
+    height: 30px;
+    position: relative;
+    right: -148px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.typing_anim .type_dot {
+    width: 10px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    position: relative;
+    left: 6px;
+    top: 3px;
+    display: inline-block;
+    opacity: 0;
+    animation: dot_fade 1.5s infinite;
+}
+
+.typing_anim p {
+    position: absolute;
+    left: -137px;
+    top: 0px;
+    margin: 0px;
+    padding: 10px;
+    height: 10px;
+    color: black;
+    background: rgba(255, 255, 255, 0.85);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation: dot_text_anim 1s infinite;
+}
+
+.typing_text span {
+    animation: dot_text_anim 2s infinite;
+    position: relative;
+}
+
+.typing_text span:nth-child(1) { animation-delay: 1s; }
+.typing_text span:nth-child(2) { animation-delay: 1.25s; }
+.typing_text span:nth-child(3) { animation-delay: 1.5s; }
+
+@keyframes dot_text_anim {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 6px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes dot_fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.typing_anim .type_dot:nth-child(1) { animation-delay: 1s; }
+.typing_anim .type_dot:nth-child(2) { animation-delay: 1.5s; }
+.typing_anim .type_dot:nth-child(3) { animation-delay: 2.0s; }
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.card .title {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card .control {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border-bottom-right-radius: 10px;
+}
+
+.card .control #close {
+    background: rgb(255, 75, 75);
+}
+
+.card .control .btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: auto;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.card .content {
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow-y: scroll;
+    height: 85%;
+}
+
+#infobox {
+    visibility: hidden;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+#closed, #infobox {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+#infobox:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#main-link {
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: white;
+    top: 3%;
+    left: 3%;
+}

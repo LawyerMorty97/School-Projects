@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Crew
+comment1.params=name
+comment1.target=Crew(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=java.lang.String\ getRole()
+comment4.params=
+comment4.target=int\ getAge()
+numComments=5

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=GameScene
+comment0.text=\r\n\ Where\ all\ the\ game\ logic\ is\r\n\r\n\ @author\ Mathias\ Berntsen\r\n\ @version\ 1.0\r\n
+comment1.params=mainStage
+comment1.target=void\ createGameScene(javafx.stage.Stage)
+comment1.text=\r\n\ This\ method\ handles\ the\ creation\ of\ the\ User\ Interface\r\n
+comment2.params=
+comment2.target=void\ nextQuestion()
+comment2.text=\r\n\ Handles\ getting\ the\ next\ state\ and\ viewing\ it\ in\ the\ window\r\n
+comment3.params=
+comment3.target=void\ testInput()
+comment3.text=\r\n\ Does\ input\ checking\ so\ we\ can\ see\ if\ the\ player\ gave\ a\ correct\ answer\ or\ not\r\n
+numComments=4

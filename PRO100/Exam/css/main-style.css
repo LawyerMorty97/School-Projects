@@ -1,0 +1,260 @@
+/* Kodet av Kjell-Olaf Slagnes */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 14, 41);
+}
+
+/* Main animation container */
+#animation-container {
+    position: relative;
+    width: 74%;
+    margin: auto;
+    padding-bottom: 49.24%;
+    overflow: hidden;
+}
+
+/* Timeline images common style */
+.common-style {
+    position: absolute;
+    width: 100%;
+}
+
+/* Center container */
+#center-box {
+    position: absolute;
+    background-color: #191d38;
+    top: 30%;
+    left: 36.64%;
+    width: 26.4%;
+    height: 40%;
+    transform: rotate(45deg);
+    z-index: 11
+}
+
+#center-text {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: -3%;
+    left: 14%;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 3vw;
+    transition: opacity 0.5s ease-out 2s;
+}
+
+#automation-text, #space-text, #cryo-text {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 9%;
+    left: 18%;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 2.4vw;
+    text-align: center;
+    opacity: 0;
+    transition: 1s 1s;
+}
+
+#ai-text, #apocalypse-text {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 15%;
+    left: 24%;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 2.4vw;
+    text-align: center;
+    opacity: 0;
+    transition: 1s 1s;
+}
+
+#implant-text {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 4%;
+    left: 13%;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 2.4vw;
+    text-align: center;
+    opacity: 0;
+    transition: 1s 1s;
+}
+
+/* Linked divs to be placed above each section */
+.sub-sites-common {
+    position: absolute;
+    z-index: 10;
+}
+
+#sub-site1 {
+    left: -16.5%;
+    height: 48.7%;
+    width: 50%;
+    transform: skewX(41.9deg);
+}
+
+#sub-site2 {
+    left: 23.9%;
+    top: -40.8%;
+    height: 70%;
+    width: 50%;
+    transform: rotate(45deg) skew(3deg, 2.8deg);
+}
+
+#sub-site3 {
+    left: 66.6%;
+    height: 48.7%;
+    width: 50%;
+    transform: skewX(-42.1deg);
+}
+
+#sub-site4 {
+    left: 66.7%;
+    top: 51.3%;
+    height: 48.7%;
+    width: 50%;
+    transform: skewX(42.1deg)
+}
+
+#sub-site5 {
+    left: 26.5%;
+    top: 70%;
+    height: 70%;
+    width: 50%;
+    transform: rotate(45deg) skew(3deg, 2.8deg); 
+}
+
+#sub-site6 {
+    left: -16.5%;
+    top: 51.3%;
+    height: 48.7%;
+    width: 50%;
+    transform: skewX(-42.1deg);
+}
+
+/* Subsite images styling */
+/* Page 1 */
+#automation-page1 {
+    opacity: 0;
+    transition: opacity 1s ease-out 1s;
+}
+#a-site1:hover ~ #automation-page1 {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#a-site1:hover ~ #center-box #automation-text {
+    opacity: 1;
+    transition: opacity 1s 1s;
+}
+
+#a-site1:hover ~ #center-box #center-text {
+    opacity: 0;
+    transition: opacity 1s ;
+}
+
+/* Page 2 */
+#artificial-intelligence-page2 {
+    opacity: 0;
+    transition: opacity 1s ease-out 1s;
+}
+#a-site2:hover ~ #artificial-intelligence-page2 {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#a-site2:hover ~ #center-box #ai-text {
+    opacity: 1;
+    transition: opacity 1s 1s;
+}
+
+#a-site2:hover ~ #center-box #center-text {
+    opacity: 0;
+    transition: opacity 1s ;
+}
+
+/* Page 3 */
+#space-page3 {
+    opacity: 0;
+    transition: opacity 1s ease-out 1s;
+}
+#a-site3:hover ~ #space-page3 {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#a-site3:hover ~ #center-box #space-text {
+    opacity: 1;
+    transition: opacity 1s 1s;
+}
+
+#a-site3:hover ~ #center-box #center-text {
+    opacity: 0;
+    transition: opacity 1s ;
+}
+
+/* Page 4 */
+#implant-page4 {
+    opacity: 0;
+    transition: opacity 1s ease-out 1s;
+}
+#a-site4:hover ~ #implant-page4 {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#a-site4:hover ~ #center-box #implant-text {
+    opacity: 1;
+    transition: opacity 1s 1s;
+}
+
+#a-site4:hover ~ #center-box #center-text {
+    opacity: 0;
+    transition: opacity 1s ;
+}
+
+/* Page 5 */
+#cryo-page5 {
+    opacity: 0;
+    transition: opacity 1s ease-out 1s;
+}
+#a-site5:hover ~ #cryo-page5 {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#a-site5:hover ~ #center-box #cryo-text {
+    opacity: 1;
+    transition: opacity 1s 1s;
+}
+
+#a-site5:hover ~ #center-box #center-text {
+    opacity: 0;
+    transition: opacity 1s ;
+}
+
+/* Page 6 */
+#apocalypse-page6 {
+    opacity: 0;
+    transition: opacity 1s ease-out 1s;
+}
+#a-site6:hover ~ #apocalypse-page6 {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#a-site6:hover ~ #center-box #apocalypse-text {
+    opacity: 1;
+    transition: opacity 1s 1s;
+}
+
+#a-site6:hover ~ #center-box #center-text {
+    opacity: 0;
+    transition: opacity 1s ;
+}

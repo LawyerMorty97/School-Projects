@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Clock
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Clock\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Clock()
+comment2.params=uid
+comment2.target=Clock(java.lang.String)
+comment3.params=uid\ locid
+comment3.target=Clock(java.lang.String,\ java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

@@ -1,0 +1,360 @@
+/* Mathias Berntsen (Group 28) */
+
+/* .bg:after Content er ikke greit*/
+/* .title User select er ikke greit */
+/* .entry .art_content User select og pointer event er ikke greit */
+/* .return Vertical-align og line-height er ikke greit */
+
+
+/* Fonts */
+@font-face {
+	font-family: 'Coyote';
+	src: url("../fonts/coyote.ttf");
+}
+
+@font-face {
+	font-family: 'Studio';
+	src: url("../fonts/studiogothic.ttf");
+}
+
+@font-face {
+	font-family: 'Airfly';
+	src: url("../fonts/airfly.ttf");
+}
+
+@font-face {
+	font-family: 'Seca';
+	src: url("../fonts/fl_seca.ttf");
+}
+
+/* CSS Variables for each entry color (odd and even color) */
+:root {
+    --color_one: #56BDA2;
+    --color_two: #DBB13B;
+    --color_twe: #333333;
+    --animation_color: var(--color_one);
+}
+
+/* Sans-serif class tag */
+.sans {
+    font-family: sans-serif;
+}
+
+/* Body tag  */
+body {
+	background: linear-gradient(to left, #DBB13B, #56BDA2, #2494A2, #304B78, #2D3258, #0A0E29);
+    font-family: "Coyote";
+	padding: 0;
+	margin: 0;
+}
+
+/* Background tag  */
+.bg {
+    position: fixed;
+    top: -80px;
+    left: -80px;
+    width: 180%;
+    height: 180%;
+    background: url("../images/Automation/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* Background animation tag  */
+.bg:after {
+    animation: rand_sim 50s steps(328) infinite;
+    background-image: url("../images/Automation/background.jpg");
+    height: 300%;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+}
+
+/* Title tags */
+.title {
+	margin: auto;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+.title h1 {
+	text-align: center;
+	background: -webkit-linear-gradient(white, rgba(0, 0, 0, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 5em;
+}
+
+.title p {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -80px;
+	margin-bottom: 0px;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0), black);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Body container */
+.container {
+    display: table;
+    width: 100%;
+    background: none;
+    position: absolute;
+    height: 100%;
+}
+
+.content {
+	background: rgba(0, 0, 0, 0.25);
+	width: 100%;
+	height: 100%;
+}
+
+/* Title classes */
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+#main_title {
+    font-family: "Coyote";
+    opacity: 0;
+    animation: fade_in 6s forwards;
+}
+
+/* Article classes */
+.entries {
+    width: 40%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.entries .entry {
+    opacity: 0;
+    animation: warp_in 1.5s forwards;
+    animation-delay: 6s;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.entries .entry .title {
+    font-family: "Coyote";
+}
+
+.entry .art_content {
+    font-family: "Airfly";
+	left: 0%;
+	top: 25%;
+}
+
+.entries .entry .e_img {
+    background-color: var(--animation_color);
+    opacity: 0;
+    position: fixed;
+    top: 12px;
+    width: 128px;
+	border: 2px solid var(--animation_color);
+	border-radius: 200px;
+    animation: warp_in 1.75s forwards, rotation 10s linear infinite;
+    animation-delay: 2s, 4s;
+}
+
+/* Entry class selectors */
+.entries .entry:nth-child(odd) {
+    --animation_color: var(--color_one);
+}
+
+.entries .entry:nth-child(even) {
+    --animation_color: var(--color_two);
+}
+
+.entries .entry:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.entries .entry:nth-child(2) {
+    animation-delay: 1.1s;
+}
+
+.entries .entry:nth-child(3) {
+    animation-delay: 1.3s;
+}
+
+.entries .entry:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.entries .entry:nth-child(5) {
+    animation-delay: 1.7s;
+}
+
+.entries .entry:nth-child(6) {
+    animation-delay: 1.9s;
+}
+
+.entries .entry:nth-child(7) {
+    animation-delay: 2.0s;
+}
+
+.entries .entry:nth-child(odd) img {
+    left: -168px;
+}
+
+.entries .entry:nth-child(even) img {
+    right: -168px;
+    animation-direction: normal, reverse;
+}
+
+/* Centered return button class */
+.return {
+    position: fixed;
+	width: 300px;
+	height: 30px;
+	background: #DBB13B;
+	text-align: center;
+    line-height: 30px;
+	margin: auto;
+    left: 0;
+    right: 0;
+    top: -60px;
+    border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-family: "Coyote";
+    transition: top 0.5s ease-out, background 0.5s ease-out;
+    z-index: 30;
+}
+
+.return a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.ret_hover {
+    width: 40px;
+    height: 8px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 8px;
+    background: rgba(0, 0, 0, 0.5);
+	transition: width 2s ease-out, background 2s ease-out;
+    border-radius: 20px;
+    z-index: 30;
+}
+
+.ret_hover:hover {
+	width: 100px;
+    background: #56BDA2;
+	transition: width 2s ease-out, background 2s ease-out;
+}
+
+#show_return:target {
+    top: 0px;
+    transition: top 0.5s ease-out, background 1s ease-out;
+}
+
+#show_return:hover a {
+    color: black;
+    transition: color 1s ease-out;
+}
+
+/* Animaton keyframes */
+@keyframes warp_in {
+    from {
+        opacity: 0;
+        color: black;
+        transform: scale(0.25);
+    }
+    75% {
+        color: var(--animation_color);
+        transform: scale(1.1);
+        background: none;
+    }
+    80% {
+        background: white;
+        border-radius: 10px;
+    }
+    to {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.75);
+        transform: scale(1);
+    }
+}
+
+@keyframes rand_sim {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%,8%) }
+    90% { transform:translate(-10%, 10%) }
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.5)
+}

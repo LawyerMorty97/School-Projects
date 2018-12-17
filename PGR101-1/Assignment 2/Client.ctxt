@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Client
+comment0.text=\r\n\ Instances\ the\ game\r\n\r\n\ @author\ Mathias\ Berntsen\r\n\ @version\ 1.0\r\n
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+numComments=2
