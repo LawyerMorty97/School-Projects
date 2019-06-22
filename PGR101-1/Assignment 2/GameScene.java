@@ -164,13 +164,15 @@ public class GameScene
      */
     static void testInput()
     {
+        String answer = currentState.getName();
         String entered = field.getText();
         
-        System.out.println(entered + " = " + currentState.getName());
-        if (entered.equals(currentState.getName())) {
+        if (entered.toLowerCase().equals(currentState.getName().toLowerCase())) {
+            System.out.println(entered + " = " + answer);
             Core.correct++;
             mainImage.setBlendMode(BlendMode.GREEN);
         } else {
+            System.out.println(entered + " != " + answer);
             mainImage.setBlendMode(BlendMode.COLOR_BURN);
         }
         
